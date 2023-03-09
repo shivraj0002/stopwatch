@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="stopwatch-container">
+            <!-- <div class="heading">Calculator using html css and js</div> -->
+            <div class="stopwatch">
+                <div class="stopwatch-heading">
+
+                    <p id="heading">
+                        Stopwatch
+                    </p>
+                    <p id="heading2">
+                        Input <i class="fa-solid fa-keyboard"></i>
+                    </p>
+                    <div class="inputSection">
+                        <section class="time-input">
+                            <label for="hours-input">Hours</label>
+                            <input type="number" name="hours-input" id="hours-input" value="00">
+                        </section>
+                        <section class="time-input">
+                            <label for="minuts-input">Min</label>
+                            <input type="number" name="minuts-input" id="minuts-input" value="00">
+                        </section>
+                        <section class="time-input">
+                            <label for="seconds-input">Sec</label>
+                            <input type="number" name="seconds-input" id="seconds-input" value="00">
+                        </section>
+                    </div>
+                    <div class="inputAction">
+                        <button id="start-btn" class="btn btn-full btn-green">Start <i
+                                class="fa-solid fa-circle-play"></i></button>
+                        <button id="infinite-btn" class="btn btn-full"><i class="fa-solid fa-infinity"></i> Infinite <i
+                                class="fa-solid fa-infinity"></i></button>
+                    </div>
+                </div>
+                <div class="stopwatch-body">
+                    <p id="heading2">
+                        Output <i class="fa-solid fa-square-poll-horizontal"></i>
+                    </p>
+                    <div class="inputSection">
+                        <section class="time-input">
+                            <label for="hours-output">Hours</label>
+                            <input disabled type="number" name="hours-output" id="hours-output" value="00">
+                        </section>
+                        <section class="time-input">
+                            <label for="minuts-output">Min</label>
+                            <input disabled type="number" name="minuts-output" id="minuts-output" value="00">
+                        </section>
+                        <section class="time-input">
+                            <label for="seconds-output">Sec</label>
+                            <input disabled type="number" name="seconds-output" id="seconds-output" value="00">
+                        </section>
+                    </div>
+                    <div class="watchAction">
+                        <button id="stop-btn" class="btn btn-full btn-error" style="margin-top: 10px;">Stop <i
+                                class="fa-solid fa-power-off"></i></button>
+                        <button id="reset-btn" class="btn btn-full btn-warning">Reset <i
+                                class="fa-solid fa-trash-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Rajdhani:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url("assets/bg3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  height: 100vh;
+  width: 97vw;
+  margin: 0 auto 0 auto;
+  background-image: url("assets/bg3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-container {
+  max-width: 450px;
+  width: 95vw;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  border-radius: 15px;
+}
+.heading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.stopwatch {
+  width: 100%;
+}
+
+#heading {
+  text-align: center;
+  padding: 10px;
+  font-family: "Bitter", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: lightgrey;
+}
+#heading2 {
+  text-align: center;
+  padding: 10px;
+  font-family: "Bitter", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.inputSection {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+}
+
+.time-input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 33%;
+}
+
+.time-input label {
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-size: 1.3rem;
+  color: lightgray;
+}
+
+.time-input input::-webkit-outer-spin-button,
+.time-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.time-input input {
+  width: 90%;
+  height: 40px;
+  padding: none;
+  border: none;
+  font-size: 1.4rem;
+  color: lightgrey;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding-left: 0.6rem;
+  -moz-appearance: textfield;
+  text-align: center;
+  caret-color: white;
+}
+
+.inputAction {
+  width: 100%;
+}
+
+.stopwatch-body {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: lightgrey;
+  font-family: "Bitter", serif;
+  background-position: center;
+  transition: background 0.8s;
+}
+.btn-full {
+  font-size: 1rem;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background: #11193e radial-gradient(circle, transparent 1%, #11193e 1%)
+    center/15000%;
+  color: white;
+}
+.btn:active {
+  background-color: #d4a017;
+  background-size: 100%;
+  transition: background 0s;
+}
+.btn-green:active {
+  background-color: #57c84d;
+}
+
+.btn-error:active {
+  background-color: #ea4c46;
+}
+.btn-warning:active {
+  background-color: #ffdd3c;
+  background-size: 100%;
+  transition: background 0s;
+}
