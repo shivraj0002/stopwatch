@@ -103,6 +103,10 @@ startBtn.addEventListener("click", function () {
         getInputedData().minutes * 60 +
         getInputedData().seconds;
     elapsedTime = 0;
+    if (timeIs == 0) {
+        alert("Please Fill the Value to Start! or Start infinite stopwatch")
+        return
+    }
     disableUpperSection();
     startStopwatch(timeIs);
 });
